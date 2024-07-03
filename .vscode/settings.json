@@ -1,3 +1,4 @@
 {
-    "java.compile.nullAnalysis.mode": "automatic"
+    "java.compile.nullAnalysis.mode": "automatic",
+    "cmake.sourceDirectory": "C:/Users/andre.silva/cursosAndre/React Native/FitDev/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup"
 }

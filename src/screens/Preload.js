@@ -1,4 +1,6 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable prettier/prettier */
 /* eslint-disable no-trailing-spaces */
 import { useEffect } from 'react';
 import { StackActions, useNavigation } from '@react-navigation/native';
