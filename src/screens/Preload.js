@@ -1,5 +1,3 @@
-/* eslint-disable quotes */
-/* eslint-disable comma-dangle */
 /* eslint-disable prettier/prettier */
 /* eslint-disable no-trailing-spaces */
 import { useEffect } from 'react';
@@ -9,9 +7,12 @@ import {connect} from 'react-redux';
 const Preload = (props) => {
 
   const navigation = useNavigation();
-
+  
+  // Temporário 
   useEffect(() => {
-    navigation.dispatch(StackActions.replace('StarterStack', { index: 0 }));
+    navigation.dispatch(
+      StackActions.replace('StarterStack', { index: 0 })
+  );
   }, []);
 
   // useEffect(() => {
@@ -28,12 +29,10 @@ const Preload = (props) => {
   return null;
 };
   
-
-
-
 const mapStateToProps = (state) => {
   return {
-    name:state.userReducer.name
+    name:state.userReducer.name,
+    nickName:state.userReducer.nickName,
   };
 };
 

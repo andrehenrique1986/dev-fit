@@ -9,7 +9,11 @@ const Stack = createStackNavigator();
 const StarterStack = () => {
     return (
         <Stack.Navigator>
-            <Stack.Screen name="StarterIntro" component={StarterIntro} />
+            <Stack.Screen 
+            name="StarterIntro" 
+            component={StarterIntro} 
+            options={{ headerShown: false }} 
+            /> 
         </Stack.Navigator>
     );
 }
