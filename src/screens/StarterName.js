@@ -23,6 +23,13 @@ const HeaderText = styled.Text`
   margin-bottom: 50px;
 `;
 
+const HeaderMiniText = styled.Text`
+   font-size: 16px;
+   color: #333;
+   margin-top: 5px;
+   margin-bottom: 5px;
+`;
+
 const NameInput = styled.TextInput`
   border: 1px solid #CCC;
   width: 100%;
@@ -81,6 +88,7 @@ const Page = (props) => {
         onSubmitEditing={nextAction}
       />
       <HeaderText>Como você gostaria de ser chamado ?</HeaderText>
+      <HeaderMiniText>Este campo não é obrigatório</HeaderMiniText>
       <NameInput
         value={props.nickName}
         onChangeText={handleChangeNickName}
